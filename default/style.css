@@ -186,142 +186,70 @@ ul li {
   bottom: 0;
   overflow-y: auto;
   overflow-x: hidden;
-  background: #4640400c;
+  background-color: #f3eaea;
   padding: 20px 20px 0px 20px;
 }
 
-.discounts {
-  background-color: white;
-  border-radius: 8px;
-  border: 1px solid #854f4f;
-  padding: 20px;
-  margin-top: 30px;
-}
-
-.disHead {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.disTitle,
-.disView {
-  font-size: 20px;
-  font-weight: 900;
-  color: #3f0102;
-  cursor: pointer;
-}
-
-.disCard {
-  color: black;
-  padding: 0px 15px;
+.slider {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid #740000;
+  margin: auto;
+  border-radius: 12px;
 }
 
-.disBadge {
-  background-color: #740000;
-  width: 70px;
-  height: 30px;
-  color: white;
-  font-family: DM Sans;
-  font-size: 15px;
-  font-weight: 700;
-  text-align: center;
-  align-content: center;
+.slides {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slides img {
+  object-fit: cover;
+}
+
+.back,
+.next {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 0px 5px;
-}
-
-.divImg {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.disCard img {
-  width: 220px;
-  display: block;
-}
-
-.disName {
-  font-weight: 800;
-  margin-top: 6px;
-}
-
-.disDesc {
-  font-size: 13px;
-  opacity: 0.85;
-  margin-bottom: 6px;
-}
-
-.disPrices {
-  display: flex;
-  align-items: center;
-  margin-bottom: 6px;
-}
-
-.disOriginal {
-  text-decoration: line-through;
-  font-size: 13px;
-  opacity: 0.7;
-}
-
-.disPrice {
-  margin-left: 10px;
-}
-
-.disDiscount {
-  background-color: #ffa1a2;
-  color: #3f0102;
-  padding: 2px 6px;
-  font-size: 12px;
-  font-weight: 900;
-  border-radius: 4px;
-}
-
-.disExpire {
-  font-size: 12px;
-  margin-top: auto;
-  opacity: 0.7;
-}
-
-.disFooter {
-  background-color: #ffecec;
-  width: 100%;
-  height: 30px;
-  align-content: center;
-  text-align: center;
+  background: #ffa1a2;
+  border: none;
+  padding: 10px 14px;
   cursor: pointer;
-  font-weight: 700;
-  font-size: 15px;
+  font-size: 22px;
+  border-radius: 8px;
 }
 
-.disFooter:hover {
-  transition: all 1s;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
-  background-color: #fccccc;
+.back {
+  top: 45%;
+  right: 15px;
+}
+
+.back:hover {
+  background-color: #ffecec;
+}
+
+.next {
+  top: 55%;
+  right: 15px;
+}
+
+.next:hover {
+  background-color: #ffecec;
 }
 
 .footer {
-  border: 1px solid #3f0102;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1fr;
   gap: 40px;
   border-radius: 8px;
   margin-top: 30px;
   padding: 40px 60px;
-  background-color: white;
+  background-color: #ffd4d4;
 }
 
 .f_logo img {
-  width: 200px;
+  width: 160px;
   border-radius: 8px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
 }
 
 .footer .title {
@@ -339,7 +267,7 @@ ul li {
 .footer ul li {
   width: 200px;
   height: 35px;
-  border: 1px solid white;
+  border: 1px solid #ffd4d4;
   padding: 0px 10px;
   border-radius: 8px;
   margin-bottom: 8px;
@@ -382,25 +310,4 @@ ul li {
   text-align: center;
   font-size: 15px;
   font-weight: 500;
-}
-
-@media (max-width: 1024px) {
-  .nav {
-    width: 200px;
-  }
-  .nav ul li a button {
-    font-size: 14px;
-    padding-left: 20px;
-    font-weight: 700;
-    width: 150px;
-  }
-  .search input {
-    width: 350px;
-  }
-  .search {
-    right: 350px;
-  }
-  .container {
-    left: 200px;
-  }
 }

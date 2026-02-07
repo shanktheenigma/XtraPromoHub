@@ -1,0 +1,90 @@
+.discountGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.discountCard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.discountCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.discountInfo {
+  margin-top: 10px;
+}
+
+.discountTitle {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #3f0102;
+}
+
+.discountDesc {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.discountFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.discountTag {
+  font-size: 13px;
+  background: #ffd4d4;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.removeBookmark {
+  cursor: pointer;
+  color: #740000;
+  font-size: 18px;
+}
+
+.emptyBookmark {
+  display: none;
+  text-align: center;
+  margin-top: 80px;
+  opacity: 0.6;
+}
+
+.emptyBookmark i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.discountCard button {
+  background-color: #ffecec;
+  width: 100%;
+  height: 30px;
+  align-content: center;
+  text-align: center;
+  cursor: pointer;
+  line-height: 30px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 900;
+  border: none;
+}
+
+.discountCard button:hover {
+  transition: all 1s;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+  background-color: #fccccc;
+}

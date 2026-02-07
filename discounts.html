@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="discounts.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="IMG/Favicon.png" type="image/x-icon" />
     <title>Xtra</title>
@@ -45,10 +45,10 @@
     <div class="nav">
       <ul>
         <li>
-          <a href="index.html"><button class="active">Home</button></a>
+          <a href="index.html"><button>Home</button></a>
         </li>
         <li>
-          <a href="discounts.html"><button>Discounts</button></a>
+          <a href="discounts.html"><button class="active">Discounts</button></a>
         </li>
         <li>
           <a href="offer.html"><button>Offer</button></a>
@@ -62,99 +62,24 @@
       </ul>
     </div>
 
-    <a href="#" id="top">
-      <i class="fa-solid fa-circle-up fa-2x"></i>
-    </a>
-
     <div class="container">
-      <!-- SLIDER -->
-      <div class="slider">
-        <div class="slides">
-          <img src="IMG/slider1.jpg" />
-          <img src="IMG/slider2.jpg" />
-          <img src="IMG/slider3.png" />
-        </div>
-        <button class="back">&#10094;</button>
-        <button class="next">&#10095;</button>
-      </div>
-
-      <!-- DISCOUNT SECTIONS -->
-      <div class="discounts" data-category="trending">
-        <div class="disHead">
-          <div class="disTitle">Trending</div>
-          <div class="disView"><a href="discounts.html">View All</a></div>
-        </div>
-        <div class="disCards"></div>
-      </div>
-
-      <div class="discounts" data-category="popular">
-        <div class="disHead">
-          <div class="disTitle">Popular</div>
-          <div class="disView"><a href="discounts.html">View All</a></div>
-        </div>
-        <div class="disCards"></div>
-      </div>
-
-      <div class="sustainability">
-        <div class="susHead">
-          <div class="susTitle">Sustainability at Xtra</div>
-          <div class="susSub">Saving money shouldn’t cost the planet</div>
-        </div>
-
-        <div class="susGrid">
-          <div class="susCard">
-            <i class="fa-solid fa-leaf"></i>
-            <div class="susCardTitle">Eco-Friendly Brands</div>
-            <p>
-              We highlight promotions from brands that use sustainable materials
-              and responsible production.
-            </p>
-          </div>
-
-          <div class="susCard">
-            <i class="fa-solid fa-recycle"></i>
-            <div class="susCardTitle">Reduce Waste</div>
-            <p>
-              Digital discounts mean less paper, less waste, and a cleaner
-              future.
-            </p>
-          </div>
-
-          <div class="susCard">
-            <i class="fa-solid fa-bolt"></i>
-            <div class="susCardTitle">Smart Consumption</div>
-            <p>
-              Buy what you need, when you need it — smarter choices, lower
-              impact.
-            </p>
-          </div>
-
-          <div class="susCard">
-            <i class="fa-solid fa-hand-holding-heart"></i>
-            <div class="susCardTitle">Community Impact</div>
-            <p>
-              Supporting local and ethical businesses through curated offers.
-            </p>
-          </div>
+      <button id="backToTop" aria-label="Back to top">To top</button>
+      <div class="category">
+        <div class="catTitle">View by Category</div>
+        <div class="categories">
+          <button>Beauty</button>
+          <button>Fragrances</button>
+          <button>Furniture</button>
+          <button>Groceries</button>
+          <button>Stationary</button>
+          <button>Tech</button>
+          <button>Household</button>
+          <button>Toys</button>
+          <button>Clothings</button>
+          <button>Pet Accessories</button>
         </div>
       </div>
-
-      <div class="discounts" data-category="best">
-        <div class="disHead">
-          <div class="disTitle">Best Discount</div>
-          <div class="disView"><a href="discounts.html">View All</a></div>
-        </div>
-        <div class="disCards"></div>
-      </div>
-
-      <div class="discounts" data-category="others">
-        <div class="disHead">
-          <div class="disTitle">Others</div>
-          <div class="disView"><a href="discounts.html">View All</a></div>
-        </div>
-        <div class="disCards"></div>
-      </div>
-
+      <div id="productsWrapper"></div>
       <div class="footer">
         <div class="f_logo"><img src="IMG/Logo.png" alt="Logo of Xtra" /></div>
         <div class="about">
@@ -194,7 +119,7 @@
       <div class="copyright">© 2026 Xtra Promo Hub. All rights reserved.</div>
     </div>
 
-    <script src="home.js"></script>
     <script src="script.js"></script>
+    <script src="discounts.js"></script>
   </body>
 </html>

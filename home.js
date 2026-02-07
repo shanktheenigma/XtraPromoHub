@@ -49,7 +49,7 @@ fetch("https://dummyjson.com/products")
               <span class="disOriginal">$${p.price}</span>
               <span class="disPrice">$${price}</span>
             </div>
-            <div class="disFooter">View in Detail</div>
+            <div class="disFooter"><a href="disDetail.html">View in Detail</a></div>
           </div>
         `;
       });

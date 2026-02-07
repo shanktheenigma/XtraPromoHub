@@ -1,204 +1,46 @@
-{
-  "products": [
-    {
-      "id": 1,
-      "title": "Wireless Headphones",
-      "image": "https://placehold.co/280x280/ffa1a2/3f0102/png",
-      "originalPrice": 120,
-      "discountPrice": 79,
-      "discountPercent": 34,
-      "expireAt": "2026-02-10T23:59:59",
-      "category": "Electronics"
-    },
-    {
-      "id": 2,
-      "title": "Leather Wallet",
-      "image": "https://placehold.co/280x280/ffd4d4/3f0102/png",
-      "originalPrice": 45,
-      "discountPrice": 29,
-      "discountPercent": 36,
-      "expireAt": "2026-02-12T23:59:59",
-      "category": "Fashion"
-    },
-    {
-      "id": 3,
-      "title": "Running Shoes",
-      "image": "https://placehold.co/280x280/ffa1a2/3f0102/png",
-      "originalPrice": 90,
-      "discountPrice": 59,
-      "discountPercent": 34,
-      "expireAt": "2026-02-08T23:59:59",
-      "category": "Sports"
-    },
-    {
-      "id": 4,
-      "title": "Organic Face Cream",
-      "image": "https://placehold.co/280x280/ffd4d4/3f0102/png",
-      "originalPrice": 35,
-      "discountPrice": 22,
-      "discountPercent": 37,
-      "expireAt": "2026-02-15T23:59:59",
-      "category": "Beauty"
-    },
-    {
-      "id": 5,
-      "title": "Bluetooth Speaker",
-      "image": "https://placehold.co/280x280/ffa1a2/3f0102/png",
-      "originalPrice": 90,
-      "discountPrice": 59,
-      "discountPercent": 34,
-      "expireAt": "2026-02-09T23:59:59",
-      "category": "Electronics"
-    },
-    {
-      "id": 6,
-      "title": "Coffee Maker",
-      "image": "https://placehold.co/280x280/ffd4d4/3f0102/png",
-      "originalPrice": 120,
-      "discountPrice": 85,
-      "discountPercent": 29,
-      "expireAt": "2026-02-14T23:59:59",
-      "category": "Home Appliances"
-    },
-    {
-      "id": 7,
-      "title": "Yoga Mat",
-      "image": "https://placehold.co/280x280/ffa1a2/3f0102/png",
-      "originalPrice": 40,
-      "discountPrice": 25,
-      "discountPercent": 38,
-      "expireAt": "2026-02-11T23:59:59",
-      "category": "Sports"
-    },
-    {
-      "id": 8,
-      "title": "Cookware Set",
-      "image": "https://placehold.co/280x280/ffd4d4/3f0102/png",
-      "originalPrice": 200,
-      "discountPrice": 149,
-      "discountPercent": 26,
-      "expireAt": "2026-02-20T23:59:59",
-      "category": "Home"
-    },
-    {
-      "id": 9,
-      "title": "Luxury Perfume",
-      "image": "https://placehold.co/280x280/ffa1a2/3f0102/png",
-      "originalPrice": 150,
-      "discountPrice": 99,
-      "discountPercent": 34,
-      "expireAt": "2026-02-13T23:59:59",
-      "category": "Beauty"
-    },
-    {
-      "id": 10,
-      "title": "Gaming Chair",
-      "image": "https://placehold.co/280x280/ffd4d4/3f0102/png",
-      "originalPrice": 250,
-      "discountPrice": 179,
-      "discountPercent": 28,
-      "expireAt": "2026-02-18T23:59:59",
-      "category": "Furniture"
-    },
-    {
-      "id": 11,
-      "title": "T-Shirt Pack",
-      "image": "https://placehold.co/280x280/ffa1a2/3f0102/png",
-      "originalPrice": 60,
-      "discountPrice": 39,
-      "discountPercent": 35,
-      "expireAt": "2026-02-22T23:59:59",
-      "category": "Fashion"
-    },
-    {
-      "id": 12,
-      "title": "Smart Watch",
-      "image": "https://placehold.co/280x280/ffd4d4/3f0102/png",
-      "originalPrice": 200,
-      "discountPrice": 139,
-      "discountPercent": 30,
-      "expireAt": "2026-02-25T23:59:59",
-      "category": "Electronics"
-    },
-    {
-      "id": 13,
-      "title": "Protein Powder",
-      "image": "https://placehold.co/280x280/ffa1a2/3f0102/png",
-      "originalPrice": 50,
-      "discountPrice": 35,
-      "discountPercent": 30,
-      "expireAt": "2026-02-17T23:59:59",
-      "category": "Food"
-    },
-    {
-      "id": 14,
-      "title": "Laptop Backpack",
-      "image": "https://placehold.co/280x280/ffd4d4/3f0102/png",
-      "originalPrice": 90,
-      "discountPrice": 59,
-      "discountPercent": 34,
-      "expireAt": "2026-02-19T23:59:59",
-      "category": "Fashion"
-    },
-    {
-      "id": 15,
-      "title": "Indoor Plant Set",
-      "image": "https://placehold.co/280x280/ffa1a2/3f0102/png",
-      "originalPrice": 60,
-      "discountPrice": 42,
-      "discountPercent": 30,
-      "expireAt": "2026-02-23T23:59:59",
-      "category": "Home"
-    },
-    {
-      "id": 16,
-      "title": "Hair Dryer",
-      "image": "https://placehold.co/280x280/ffd4d4/3f0102/png",
-      "originalPrice": 45,
-      "discountPrice": 29,
-      "discountPercent": 36,
-      "expireAt": "2026-02-16T23:59:59",
-      "category": "Beauty"
-    },
-    {
-      "id": 17,
-      "title": "Sneakers",
-      "image": "https://placehold.co/280x280/ffa1a2/3f0102/png",
-      "originalPrice": 120,
-      "discountPrice": 79,
-      "discountPercent": 34,
-      "expireAt": "2026-02-26T23:59:59",
-      "category": "Fashion"
-    },
-    {
-      "id": 18,
-      "title": "Blender",
-      "image": "https://placehold.co/280x280/ffd4d4/3f0102/png",
-      "originalPrice": 70,
-      "discountPrice": 49,
-      "discountPercent": 30,
-      "expireAt": "2026-02-21T23:59:59",
-      "category": "Home Appliances"
-    },
-    {
-      "id": 19,
-      "title": "Chocolate Gift Box",
-      "image": "https://placehold.co/280x280/ffa1a2/3f0102/png",
-      "originalPrice": 35,
-      "discountPrice": 22,
-      "discountPercent": 37,
-      "expireAt": "2026-02-28T23:59:59",
-      "category": "Food"
-    },
-    {
-      "id": 20,
-      "title": "Yoga Shorts",
-      "image": "https://placehold.co/280x280/ffd4d4/3f0102/png",
-      "originalPrice": 40,
-      "discountPrice": 25,
-      "discountPercent": 38,
-      "expireAt": "2026-02-24T23:59:59",
-      "category": "Sports"
-    }
-  ]
-}
+[
+  {
+    "badge": "HOT",
+    "img": "images/headphone.png",
+    "name": "Wireless Headphone",
+    "desc": "Noise cancelling, 40h battery life",
+    "original": "$120",
+    "price": "$79",
+    "discount": "-34%",
+    "expire": "Expires in 3 days",
+    "footer": "Get Deal"
+  },
+  {
+    "badge": "SALE",
+    "img": "images/smartwatch.png",
+    "name": "Smart Watch Pro",
+    "desc": "Heart rate, GPS, waterproof",
+    "original": "$199",
+    "price": "$139",
+    "discount": "-30%",
+    "expire": "Expires tomorrow",
+    "footer": "View Offer"
+  },
+  {
+    "badge": "NEW",
+    "img": "images/laptop.png",
+    "name": "Aluminium Laptop Stand",
+    "desc": "Ergonomic, foldable, lightweight",
+    "original": "$49",
+    "price": "$29",
+    "discount": "-41%",
+    "expire": "Ends in 5 days",
+    "footer": "Grab Now"
+  },
+  {
+    "badge": "BEST",
+    "img": "images/shoes.png",
+    "name": "Running Shoes",
+    "desc": "Breathable, ultra-light comfort",
+    "original": "$89",
+    "price": "$59",
+    "discount": "-34%",
+    "expire": "Limited stock",
+    "footer": "Buy Now"
+  }
+]

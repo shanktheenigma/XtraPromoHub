@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="stylesheet" href="discounts.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="IMG/Favicon.png" type="image/x-icon" />
     <title>Xtra</title>
@@ -38,19 +39,32 @@
         <i class="fa-solid fa-gift"></i>Claim free standard offer!
       </div>
 
-      <div class="bookmarks"><i class="fa-regular fa-bookmark"></i></div>
-      <div class="account"><a href="account.html"></a>Log in</div>
+      <div class="account"><a href="account.html">Log in</a></div>
     </div>
 
     <div class="nav">
       <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="product.html">Discounts</a></li>
-        <li><a href="offer.html">Offer</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
+        <li>
+          <a href="index.html"><button>Home</button></a>
+        </li>
+        <li>
+          <a href="discounts.html"><button class="active">Discounts</button></a>
+        </li>
+        <li>
+          <a href="offer.html"><button>Offer</button></a>
+        </li>
+        <li>
+          <a href="aboutUs.html"><button>About Us</button></a>
+        </li>
+        <li>
+          <a href="bookmark.html"><button>Bookmarks</button></a>
+        </li>
       </ul>
     </div>
+
     <div class="container">
+      <button id="backToTop" aria-label="Back to top">To top</button>
+
       <div class="footer">
         <div class="f_logo"><img src="IMG/Logo.png" alt="Logo of Xtra" /></div>
         <div class="about">
@@ -91,5 +105,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="discounts.js"></script>
   </body>
 </html>

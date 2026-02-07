@@ -1,0 +1,486 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f4f6fb;
+  margin: 0;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* BREADCRUMB */
+.breadcrumb-nav {
+  width: 60%;
+  margin: 15px ;
+  font-size: 16px;
+  color: #ffa1a2;
+  margin-top: 130px;
+  margin-left: 300px;
+  overflow-x: hidden;
+}
+
+.breadcrumb-nav a {
+  color: #ffa1a2; 
+  text-decoration: none;
+}
+
+.breadcrumb-nav .current {
+  font-weight: 600;
+}
+
+/* PRODUCT SECTION */
+.product-main {
+  width: 73%;
+  margin: auto;
+  margin-left: 300px;
+}
+
+.product-container {
+  display: flex;
+  gap: 30px;
+  background: #ffd4d4;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* IMAGE AREA */
+.product-image-section {
+  width: 45%;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.discount-badge {
+  position:static;
+  top: 12px;
+  left: 12px;
+  background: #ff3b3b;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.image-thumbnails {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.image-thumbnails img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.image-thumbnails img.active {
+  border-color: #ffa1a2;
+}
+
+/* INFO */
+.product-info-section {
+  width: 55%;
+}
+
+.category {
+  font-size: 14px;
+  color: #777;
+}
+
+.product-info-section h1 {
+  font-size: 26px;
+  margin: 8px 0;
+}
+
+.rating i {
+  color: #ffc107;
+}
+
+.rating span {
+  font-size: 14px;
+  margin-left: 6px;
+  color: #555;
+}
+
+/* PRICE */
+.price-box {
+  margin: 18px 0;
+  background: #f1f5ff;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.current-price {
+  font-size: 30px;
+  font-weight: 700;
+  color: #d64f52;
+}
+
+.old-price span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.save-amount {
+  font-size: 14px;
+  color: #2e9b4f;
+}
+
+/* DESCRIPTION */
+.product-description p {
+  line-height: 1.6;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 8px;
+}
+
+.features i {
+  color: #2e9b4f;
+  margin-right: 6px;
+}
+
+/* BUTTONS */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: #ffa1a2;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background:#d37c7c;
+}
+
+.btn-secondary {
+  background: #ffa1a2;
+  color: #ffd4d4;
+}
+
+.btn-secondary:hover {
+  background:#d37c7c;
+}
+/* STOCK */
+.stock-info {
+  font-size: 14px;
+  color: #2e9b4f;
+}
+
+/* STORE INFO */
+.store-info-section {
+  margin-top: 40px;
+}
+
+.store-row-1 {
+  display: flex;
+  gap: 25px;
+}
+
+.store-details-card,
+.store-map-card {
+  width: 50%;
+  background: #ffd4d4;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.contact-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.contact-item i {
+  color: #e76e70;
+}
+
+/* TIMER */
+.deal-timer-small {
+  background: #e5afaf;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.timer-display {
+  display: flex;
+  gap: 6px;
+}
+
+.time-box {
+  background: #ffd4d4;
+  padding: 5px;
+  text-align: center;
+  width: 70px;
+  border-radius: 8px;
+}
+
+/* MAP */
+.map-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.center-btn {
+  display: flex;
+  justify-content: center;
+}
+
+
+.btn-directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #e5afaf;
+  color: #5a1f1f;
+
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-directions i {
+  font-size: 16px;
+}
+
+.btn-directions:hover {
+  background: #d99696;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-directions:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+/* SIMILAR PRODUCTS */
+.similar-promotions {
+  width: 73%;
+  margin: 40px auto;
+  margin-left: 300px;
+  overflow-x: hidden;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.promo-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.promo-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.promo-content {
+  padding: 15px;
+}
+
+/*Promo Price*/
+.promo-price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Current price */
+.promo-price .current {
+  font-weight: 700;
+  font-size: 16px;
+  color: #5a1f1f;
+}
+
+/* Old price with line-through */
+.promo-price .old {
+  text-decoration: line-through; 
+  color: #888;
+  font-size: 14px;
+}
+
+/* Promo Badge Floating */
+.promo-badge {
+  display: inline-block;
+  background: #ff3b3b;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+
+  /* Floating animation */
+  animation: floatBadge 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Keyframes for float */
+@keyframes floatBadge {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-4px) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-4px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+.footer{
+    margin-left: 250px;
+    overflow-x: hidden;
+}
+.deal-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #5a1f1f;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s ease;
+    z-index: 9999;
+}
+
+.deal-notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.deal-notification.success {
+    background: #2e9b4f;
+}
+
+.deal-notification.error {
+    background: #ff3b3b;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .breadcrumb-nav,
+  .product-main,
+  .similar-promotions,
+  .footer {
+    margin-left: 0;
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .breadcrumb-nav {
+    margin-top: 90px;
+    font-size: 14px;
+  }
+
+  .product-container {
+    padding: 16px;
+  }
+
+  .product-info-section h1 {
+    font-size: 22px;
+  }
+
+  .price-box {
+    padding: 12px;
+  }
+
+  .current-price {
+    font-size: 24px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons button {
+    width: 100%;
+  }
+
+  .promo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-thumbnails img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .discount-badge {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .time-box {
+    width: 55px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 900px) {
+  .product-container,
+  .store-row-1 {
+    flex-direction: column;
+  }
+
+  .product-image-section,
+  .product-info-section,
+  .store-details-card,
+  .store-map-card {
+    width: 100%;
+  }
+
+  .promo-grid {
+    grid-template-columns: 1fr;
+  }
+}

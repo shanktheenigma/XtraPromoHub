@@ -1,0 +1,82 @@
+.category {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #854f4f;
+  padding: 20px;
+}
+
+.catTitle {
+  font-size: 20px;
+  font-weight: 900;
+  color: #3f0102;
+  margin-bottom: 10px;
+}
+
+.categories {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+  grid-auto-columns: 200px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  height: 100px;
+  align-content: center;
+}
+
+.categories button {
+  height: 35px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #ffecec;
+  background-color: #ffd4d4;
+  right: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.categories button:hover {
+  transition: all ease-in-out 0.5s;
+  background-color: #ffb6b6;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.08);
+}
+
+.discounts {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #854f4f;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.disHead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.disTitle,
+.disView {
+  font-size: 20px;
+  font-weight: 900;
+  color: #3f0102;
+  cursor: pointer;
+}
+
+/* 4 products per row grid */
+.disCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.disCard {
+  color: black;
+  margin-top: 20px;
+  padding: 0px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #740000;
+  transition: transform 0.2s;
+}

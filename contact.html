@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="IMG/Favicon.png" type="image/x-icon" />
+    <title>Xtra</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="h_logo">
+        <a href="index.html">
+          <img src="IMG/Head_Logo.png" alt="Logo of Xtra"
+        /></a>
+      </div>
+      <div class="search">
+        <input type="search" placeholder="Search ... " />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <!-- Share Button -->
+      <div class="free_offer">
+        <i class="fa-solid fa-gift"></i>Claim free standard offer!
+      </div>
+
+      <div class="account"><a href="account.html">Log in</a></div>
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="index.html"><button>Home</button></a>
+        </li>
+        <li>
+          <a href="discounts.html"><button class="active">Discounts</button></a>
+        </li>
+        <li>
+          <a href="offer.html"><button>Offer</button></a>
+        </li>
+        <li>
+          <a href="aboutUs.html"><button>About Us</button></a>
+        </li>
+        <li>
+          <a href="bookmark.html"><button>Bookmarks</button></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <button id="backToTop" aria-label="Back to top">To top</button>
+      <div class="contactPage">
+        <div class="contentWrapper">
+          <div class="contactHeader">
+            <h1>Contact Xtra team</h1>
+            <p>Got any questions about the product? We're here to help.</p>
+          </div>
+
+          <div class="contactGrid">
+            <div class="contactForm">
+              <form id="contact_form">
+                <div class="rowGroup">
+                  <div class="formGroup">
+                    <label>First name</label>
+                    <input
+                      type="text"
+                      id="first_name"
+                      placeholder="First name"
+                      required
+                    />
+                  </div>
+                  <div class="formGroup">
+                    <label>Last name</label>
+                    <input
+                      type="text"
+                      id="last_name"
+                      placeholder="Last name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="formGroup">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    id="email_address"
+                    placeholder="you@company.com"
+                    required
+                  />
+                </div>
+
+                <div class="formGroup">
+                  <label>Phone number</label>
+                  <div class="phoneInput">
+                    <select id="country_code">
+                      <option value="MM">MM</option>
+                      <option value="US">US</option>
+                    </select>
+                    <input
+                      type="tel"
+                      id="phone_number"
+                      placeholder="+1 (555) 000-0000"
+                    />
+                  </div>
+                </div>
+
+                <div class="formGroup">
+                  <label>Message</label>
+                  <textarea
+                    id="message_content"
+                    rows="4"
+                    placeholder="Leave us a message..."
+                  ></textarea>
+                </div>
+
+                <div class="servicesGroup">
+                  <label>Services</label>
+                  <div class="servicesGrid">
+                    <label class="checkItem"
+                      ><input
+                        type="checkbox"
+                        name="service"
+                        value="Promotion"
+                      />Promotion & Deals</label
+                    >
+                    <label class="checkItem"
+                      ><input
+                        type="checkbox"
+                        name="service"
+                        value="Offer"
+                      />Offer Package</label
+                    >
+                    <label class="checkItem"
+                      ><input
+                        type="checkbox"
+                        name="service"
+                        value="Acount"
+                      />Account Issue</label
+                    >
+                    <label class="checkItem"
+                      ><input type="checkbox" name="service" value="Brand" />
+                      Brand Information</label
+                    >
+                    <label class="checkItem"
+                      ><input
+                        type="checkbox"
+                        name="service"
+                        value="Review"
+                      />Review</label
+                    >
+                  </div>
+                </div>
+
+                <button type="submit" class="submitBtn">Send message</button>
+              </form>
+            </div>
+
+            <div class="contactInfo">
+              <div class="infoBlock">
+                <h3>Chat with us</h3>
+                <p>Speak to our friendly team via live chat.</p>
+                <div class="linkList">
+                  <a
+                    href="https://www.livechat.com/?a=BbkaG2_WR&utm_campaign=pp_10off&utm_source=PP&utm_term=CjwKCAiA1obMBhAbEiwAsUBbIu7ncD_JcS5aqdmKhrsLx-JxPNLMJNu4UNbJiGyBFF_X4vobJydzeBoCVs8QAvD_BwE&utm_medium=9065336&gad_source=1&gad_campaignid=22618120480&gbraid=0AAAAAoi4REMW-Kvwu5vPCYl42YFR2pxCL&gclid=CjwKCAiA1obMBhAbEiwAsUBbIu7ncD_JcS5aqdmKhrsLx-JxPNLMJNu4UNbJiGyBFF_X4vobJydzeBoCVs8QAvD_BwE"
+                    ><i class="fa-regular fa-comment"></i> Start a live chat</a
+                  >
+                  <a href="https://mail.google.com/mail/u/0/#inbox"
+                    ><i class="fa-regular fa-envelope"></i> Shoot us an email</a
+                  >
+                  <a href="https://publish.twitter.com/"
+                    ><i class="fa-brands fa-twitter"></i> Message us on X</a
+                  >
+                </div>
+              </div>
+
+              <div class="infoBlock">
+                <h3>Call us</h3>
+                <p>Mon-Fri 8am to 5pm</p>
+                <a href="tel:+9595557893" class="infoLink"
+                  ><i class="fa-solid fa-phone"></i> +9595557893</a
+                >
+              </div>
+
+              <div class="infoBlock">
+                <h3>Visit us</h3>
+                <p>Chat to us in person.</p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=No.37/Quarter,Between+Hantharwaddy,and+Kyun+Taw+Rd,Yangon+11041"
+                  target="_blank"
+                  class="infoLink"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  No.37/Quarter, Between Hantharwaddy, and Kyun Taw Rd, Yangon
+                  11041
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="f_logo"><img src="IMG/Logo.png" alt="Logo of Xtra" /></div>
+        <div class="about">
+          <div class="title">About Xtra Promo Hub</div>
+          <ul>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <!-- <li></li> -->
+            <!-- <li></li> -->
+          </ul>
+        </div>
+        <div class="rules">
+          <div class="title">Rules</div>
+          <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <!-- <li></li> -->
+            <!-- <li></li> -->
+            <!-- <li></li> -->
+          </ul>
+        </div>
+        <div class="socialLink">
+          <div class="title">Community</div>
+          <a href="#">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="copyright">© 2026 Xtra Promo Hub. All rights reserved.</div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

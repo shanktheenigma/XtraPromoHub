@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="account.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Xtra PromoHub | Account</title>
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <!-- LOGIN CARD -->
+    <div class="account-container">
+      <div class="card">
+        <a href="index.html" class="home-btn"> <i class="fas fa-home"></i></a>
+        <!-- LOGO -->
+        <div class="app-logo">
+          <img
+            id="floatLogo"
+            src="IMG/Head_Logo.jpg"
+            alt="Xtra PromoHub Logo"
+          />
+        </div>
+
+        <h3>Welcome to <span class="brand-x">X</span>tra PromoHub</h3>
+        <p class="subtitle">Enter your details to access your account</p>
+
+        <!-- TABS -->
+        <div class="tabs">
+          <button class="tab active" onclick="showSignIn()">Sign In</button>
+          <button class="tab" onclick="showCreate()">Create Account</button>
+        </div>
+
+        <!-- SIGN IN FORM -->
+        <form id="signInForm">
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required />
+
+          <label>Password</label>
+          <input type="password" placeholder="••••••••" required />
+
+          <button type="submit">Sign In</button>
+
+          <p class="or">OR CONTINUE WITH</p>
+          <div class="social">
+            <button
+              type="button"
+              class="google"
+              onclick="showMessage('Google login successful')"
+            >
+              <i class="fab fa-google"></i> Google
+            </button>
+            <button
+              type="button"
+              class="facebook"
+              onclick="showMessage('Facebook login successful')"
+            >
+              <i class="fab fa-facebook-f"></i> Facebook
+            </button>
+          </div>
+        </form>
+
+        <!-- CREATE ACCOUNT FORM -->
+        <form id="createForm" class="hidden">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your full name" required />
+
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required />
+
+          <label>Password</label>
+          <input type="password" placeholder="At least 8 characters" required />
+
+          <button type="submit">Create Account</button>
+
+          <label class="custom-checkbox">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="checkbox-text">
+              By agreeing to our <a href="#">Terms & Conditions</a>
+            </span>
+          </label>
+        </form>
+      </div>
+    </div>
+
+    <script src="account.js"></script>
+  </body>
+</html>

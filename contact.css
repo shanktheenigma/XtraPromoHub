@@ -1,0 +1,163 @@
+.contactPage {
+  padding-top: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #3f0102;
+  border-radius: 8px;
+}
+
+.contentWrapper {
+  width: 90%;
+  max-width: 1100px;
+  padding: 40px 0;
+}
+
+.contactHeader {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.contactHeader h1 {
+  font-family: "DM Sans";
+  font-size: 36px;
+  color: #101828;
+}
+.contactHeader p {
+  color: #667085;
+  margin-top: 10px;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 80px;
+}
+
+.contactForm {
+  /* border: 2px solid #3f0102; */
+  padding: 32px;
+  border-radius: 8px;
+  width: 800px;
+}
+
+/* Form Groups */
+.formGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #3f0102;
+  font-size: 14px;
+}
+
+.rowGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;
+}
+
+.phoneInput {
+  display: flex;
+  gap: 8px;
+}
+.phoneInput select {
+  width: 80px;
+  background: #f9fafb;
+}
+.phoneInput input {
+  flex: 1;
+}
+
+.servicesGroup label {
+  font-weight: 600;
+  color: #3f0102;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+.checkItem {
+  font-weight: 400 !important;
+  font-size: 14px;
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #ffecec;
+}
+
+.submitBtn {
+  width: 100%;
+  border: 1px solid white;
+  background-color: #ffd4d4;
+  color: #3f0102;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: #ffecec;
+  border: 1px solid #ffa1a2;
+}
+
+.infoBlock {
+  margin-bottom: 32px;
+}
+.infoBlock h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #101828;
+}
+.infoBlock p {
+  color: #667085;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.linkList a,
+.infoLink {
+  text-decoration: none;
+  color: #101828;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.linkList a:hover,
+.infoLink:hover {
+  color: #3f0102;
+  text-decoration: underline;
+}
