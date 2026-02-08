@@ -1,3 +1,17 @@
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.querySelector(".nav");
+const navOverlay = document.getElementById("navOverlay");
+
+menuBtn.addEventListener("click", () => {
+  nav.classList.add("show");
+  navOverlay.classList.add("show");
+});
+
+navOverlay.addEventListener("click", () => {
+  nav.classList.remove("show");
+  navOverlay.classList.remove("show");
+});
+
 const backToTop = document.getElementById("backToTop");
 const container = document.querySelector(".container");
 

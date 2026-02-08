@@ -384,23 +384,98 @@ ul li {
   font-weight: 500;
 }
 
+/* ===== Menu Button ===== */
+.menuBtn {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #ffd4d4;
+  border: 1px solid #ffecec;
+  align-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menuBtn i {
+  font-size: 20px;
+  color: #3f0102;
+}
+
+.menuBtn:hover {
+  background-color: #ffecec;
+  border: 1px solid #ffa1a2;
+}
+
+/* ===== Overlay ===== */
+.navOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+.navOverlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===== Tablet & Mobile ===== */
 @media (max-width: 1024px) {
+  .menuBtn {
+    display: block;
+  }
+
   .nav {
-    width: 200px;
+    position: fixed;
+    top: 95px;
+    left: -260px;
+    width: 250px;
+    height: calc(100vh - 95px);
+    background-color: white;
+    z-index: 1000;
+    transition: left 0.3s ease;
   }
-  .nav ul li a button {
-    font-size: 14px;
-    padding-left: 20px;
-    font-weight: 700;
-    width: 150px;
+
+  .nav.show {
+    left: 0;
   }
-  .search input {
-    width: 350px;
-  }
-  .search {
-    right: 350px;
-  }
+
   .container {
-    left: 200px;
+    left: 0;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .account {
+    right: 60px;
+  }
+
+  .free_offer {
+    
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .free_offer {
+    display: none;
+  }
+
+  .menuBtn {
+    right: 80px;
+  }
+
+  .account {
+    width: 80px;
+    font-size: 14px;
   }
 }

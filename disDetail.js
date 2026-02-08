@@ -97,20 +97,5 @@ function startCountdown() {
 
 document.addEventListener('DOMContentLoaded', startCountdown);
 
-// Get Directions button
-document.addEventListener('DOMContentLoaded', () => {
-    const getDirectionsBtn = document.getElementById('getDirectionsBtn');
-
-    if (getDirectionsBtn) {
-        getDirectionsBtn.addEventListener('click', () => {
-            // Replace with your store address or Google Maps link
-            const address = encodeURIComponent('123 Oxford Street, London W1D 2JQ');
-            const mapUrl = `https://maps.app.goo.gl/Be24WJJnG3fAEaqCA`;
-            
-            // Open in new tab
-            window.open(mapUrl, '_blank');
-        });
-    }
-});
 
 

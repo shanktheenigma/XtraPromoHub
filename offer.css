@@ -1,0 +1,171 @@
+.offerContent {
+  /* .container handles the main scrolling and top spacing */
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.welcomeTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #2f1c6a;
+  text-align: left;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.promoBanner {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 40px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.bannerText {
+  max-width: 70%;
+}
+
+.bannerTitle {
+  font-size: 24px;
+  color: #2f1c6a;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.bannerDesc {
+  color: #727586;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bannerIcon {
+  font-size: 48px;
+  color: #673de6;
+  background-color: #f0ebff;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 24px;
+  max-width: 1100px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricingCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 32px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.pricingCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2f1c6a;
+  margin-bottom: 12px;
+}
+
+.cardDesc {
+  color: #727586;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  min-height: 42px;
+}
+
+.priceInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #727586;
+  font-size: 14px;
+}
+
+.discountBadge {
+  background-color: #e5e7eb;
+  color: #673de6;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.purpleBadge {
+  background-color: #673de6;
+  color: #ffffff;
+}
+
+.currentPriceBlock {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.fromText {
+  color: #727586;
+  font-size: 14px;
+}
+
+.priceAmount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2f1c6a;
+}
+
+.subscriptionNote {
+  color: #727586;
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+
+.getDealButton {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #673de6;
+  background-color: #ffffff;
+  color: #673de6;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: auto;
+}
+
+.getDealButton:hover {
+  background-color: #f0ebff;
+}

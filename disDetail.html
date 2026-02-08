@@ -17,8 +17,8 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="disDetail.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="IMG/Favicon.png" type="image/x-icon" />
     <title>Xtra</title>
   </head>
@@ -39,241 +39,187 @@
         <i class="fa-solid fa-gift"></i>Claim free standard offer!
       </div>
 
-      <div class="bookmarks"><i class="fa-regular fa-bookmark"></i></div>
-      <div class="account"><a href="account.html"></a>Log in</div>
+      <div class="account"><a href="account.html">Log in</a></div>
     </div>
 
     <div class="nav">
       <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="product.html">Discounts</a></li>
-        <li><a href="offer.html">Offer</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
+        <li>
+          <a href="index.html"><button>Home</button></a>
+        </li>
+        <li>
+          <a href="discounts.html"><button class="active">Discounts</button></a>
+        </li>
+        <li>
+          <a href="offer.html"><button>Offer</button></a>
+        </li>
+        <li>
+          <a href="aboutUs.html"><button>About Us</button></a>
+        </li>
+        <li>
+          <a href="bookmark.html"><button>Bookmarks</button></a>
+        </li>
       </ul>
     </div>
 
-    <!-- BREADCRUMB NAVIGATION -->
-    <div class="breadcrumb-nav">
-        <a href="index.html">Home</a> &gt;
-        <a href="#">Products</a> &gt;
-        <span class="current">Sony WH-1000XM5</span>
-    </div>
+    <div class="container">
+      <button id="backToTop" aria-label="Back to top">To top</button>
 
-    <!-- MAIN PRODUCT SECTION --> 
-<main class="product-main">
-    <div class="product-container">
-        <!-- LEFT: PRODUCT IMAGE -->
-        <div class="product-image-section">
+      <!-- BREADCRUMB -->
+
+      <!-- MAIN CONTENT -->
+      <main class="product-main">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a> &gt;
+          <a href="product.html">Products</a> &gt;
+          <span class="current">Sony WH-1000XM5</span>
+        </div>
+        <div class="product-container">
+          <!-- PRODUCT IMAGES -->
+          <span class="discount-badge">-25%</span>
+          <div class="product-image-section">
             <div class="main-image">
-                <span class="discount-badge">-25%</span>
-                <img id="mainImage" src="IMG/Sony wireless headphones 1.jpg" alt="Sony Headphones">
+              <img
+                id="mainImage"
+                src="IMG/Sony wireless headphones 1.jpg"
+                alt="Sony WH-1000XM5"
+              />
             </div>
-            <div class="image-thumbnails">
-                <img src="IMG/Sony wireless headphones 1.jpg" class="thumb active" onclick="changeImage(this)">
-                <img src="IMG/Sony wireless headphones 2.jpg" class="thumb" onclick="changeImage(this)">
-                <img src="IMG/Sony wireless headphones 3.jpg" class="thumb" onclick="changeImage(this)">
-            </div>
-        </div>  
 
-        <!-- RIGHT: PRODUCT INFO -->
-        <div class="product-info-section">
-            <div class="product-header">
-                <span class="category">Electronics / Headphones</span>
-                <h1>Sony WH-1000XM5 Wireless Headphones</h1>
-                
-                <div class="rating">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <span>4.7 (1,248 reviews)</span>
-                    </div>
-                </div>
+            <div class="image-thumbnails">
+              <img
+                src="IMG/Sony wireless headphones 1.jpg"
+                class="thumb active"
+                alt="Front view"
+                onclick="changeImage(this)"
+              />
+              <img
+                src="IMG/Sony wireless headphones 2.jpg"
+                class="thumb"
+                alt="Side view"
+                onclick="changeImage(this)"
+              />
+              <img
+                src="IMG/Sony wireless headphones 3.jpg"
+                class="thumb"
+                alt="Folded view"
+                onclick="changeImage(this)"
+              />
+            </div>
+          </div>
+
+          <!-- PRODUCT INFO -->
+          <div class="product-info-section">
+            <span class="category">Electronics / Headphones</span>
+            <h1>Sony WH-1000XM5 Wireless Headphones</h1>
+
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>4.7 (1,248 reviews)</span>
             </div>
 
             <div class="price-box">
-                <div class="current-price">£299.99</div>
-                <div class="old-price">Was <span>£329.99</span></div>
-                <div class="save-amount">You save £30.00</div>
+              <div class="current-price">£299.99</div>
+              <div class="old-price">Was <span>£329.99</span></div>
+              <div class="save-amount">You save £30.00</div>
             </div>
 
-            <div class="product-description">
-                <p>Premium wireless headphones with industry-leading noise cancellation. Perfect for travel, work, and entertainment.</p>
-                
-                <div class="features">
-                    <br><h3>Key Features:</h3>
-                    <ul>
-                        <br> <li><i class="fas fa-check"></i> Industry-leading noise cancellation</li>
-                        <li><i class="fas fa-check"></i> 30-hour battery life</li>
-                        <li><i class="fas fa-check"></i> Voice assistant support</li>
-                        <li><i class="fas fa-check"></i> Multipoint connection</li>
-                    </ul>
-                </div>
-            </div>
+            <p class="product-description">
+              Premium wireless headphones with industry-leading noise
+              cancellation.
+            </p>
+
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Noise cancellation</li>
+              <li><i class="fas fa-check"></i> 30-hour battery</li>
+              <li><i class="fas fa-check"></i> Voice assistant</li>
+              <li><i class="fas fa-check"></i> Multipoint connection</li>
+            </ul>
 
             <div class="action-buttons">
-            <button  id="getDealBtn" class="btn-primary">
-                  <i class="fa-solid fa-gift"></i>  Get Deal Now 
-            </button>
-            <button  id="saveDealBtn"  class="btn-secondary">
-                <i class="fa-regular fa-bookmark"></i> Save Deal 
-            </button>
-
+              <button id="getDealBtn" class="btn-primary">
+                <i class="fa-solid fa-gift"></i> Get Deal Now
+              </button>
+              <button id="saveDealBtn" class="btn-secondary">
+                <i class="fa-regular fa-bookmark"></i> Save Deal
+              </button>
             </div>
 
             <div class="stock-info">
-                <i class="fas fa-check-circle"></i>
-                <span>In Stock • Free Delivery • 30-Day Returns</span>
+              <i class="fas fa-check-circle"></i>
+              In Stock • Free Delivery • 30-Day Returns
             </div>
+          </div>
         </div>
-    </div>
 
-<!-- STORE INFORMATION BELOW -->
-<div class="store-info-section">
-    <div class="store-row-1">
-        <!-- LEFT: Store Details + Timer -->
-        <div class="store-details-card">
+        <!-- STORE INFO -->
+        <div class="store-info-section">
+          <div class="store-details-card">
             <h3><i class="fas fa-store"></i> Store Information</h3>
-            
-           <br>  <div class="store-contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-store"></i>
-                    <div>
-                        <p>Sony Official Store</p>
-                        <small>Verified Seller</small>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <p>020 7946 0958</p>
-                        <small>Phone</small>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <p>support@sony-store.co.uk</p>
-                        <small>Email</small>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <p>123 Oxford Street, London W1D 2JQ</p>
-                        <small>Address</small>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Small Timer Section -->
-            <div class="deal-timer-small">
-                <div class="timer-header">
-                    <i class="fas fa-clock"></i>
-                    <span>Deal ends in:</span>
-                </div>
-                <br> <div class="timer-display">
-                    <div class="time-box">
-                        <span id="days" class="number">02</span>
-                        <span class="label">Days</span>
-                    </div>
-                    <div class="time-separator">:</div>
-                    <div class="time-box">
-                        <span id="hours" class="number">12</span>
-                        <span class="label">Hours</span>
-                    </div>
-                    <div class="time-separator">:</div>
-                    <div class="time-box">
-                        <span id="minutes" class="number">45</span>
-                        <span class="label">Mins</span>
-                    </div>
-                    <div class="time-separator">:</div>
-                    <div class="time-box">
-                        <span id="seconds" class="number">30</span>
-                        <span class="label">Secs</span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- RIGHT: Map -->
-        <div class="store-map-card">
+            <p><strong>Sony Official Store</strong> (Verified Seller)</p>
+            <p><i class="fas fa-phone"></i> 020 7946 0958</p>
+            <p><i class="fas fa-envelope"></i> support@sony-store.co.uk</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Oxford Street, London
+            </p>
+          </div>
+
+          <div class="store-map-card">
             <h4><i class="fas fa-map-marker-alt"></i> Store Location</h4>
-            <br> <div class="map-container">
-                <!-- Replace with actual map image -->
-                <div class="map-image">
-                    <img src="IMG/Sony Store.jpg" 
-                         alt="Sony Store Location Map">
-                </div>
-            </div>
-           <br>  <div class="center-btn">
-            <button id="getDirectionsBtn" class="btn-directions">
-                <i class="fas fa-directions"></i> Get Directions
-            </button>
-            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d151316.0346520112!2d-0.5728249!3d51.5574033!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876122ab5b1afa5%3A0x3956ecbaaa8b83f8!2sSony%20Centre!5e1!3m2!1sen!2ssg!4v1770479230365!5m2!1sen!2ssg"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-    </div>
-</div> 
-</main>
-        <!-- SIMILAR PROMOTIONS (WITH 3 PRODUCTS) -->
-       <br> <section class="similar-promotions">
-            <h2>Similar Promotions</h2>
-            
-           <br> <div class="promo-grid">
-                <!-- Product 1 -->
-                <div class="promo-card">
-                    <img src="IMG/Apple Watch Series 9.jpg" alt="Apple Watch">
-                    <div class="promo-content">
-                        <h4>Apple Watch Series 9</h4>
-                        <br> <div class="promo-price">
-                            <span class="current">£299</span>
-                            <span class="old">£349</span>
-                        </div>
-                        <p class="promo-desc">Latest smartwatch with health</p>
-                       <br> <span class="promo-badge">-14%</span>
-                    </div>
-                </div>
 
-                <!-- Product 2 -->
-                <div class="promo-card">
-                    <img src="https://images.unsplash.com/photo-1591370874773-6702e8f12fd8?w=400&h=250&fit=crop" alt="AirPods Pro">
-                    <div class="promo-content">
-                        <h4>AirPods Pro (2nd Gen)</h4>
-                        <br> <div class="promo-price">
-                            <span class="current">£249</span>
-                            <span class="old">£299</span>
-                        </div>
-                         <p class="promo-desc">Noise cancellation & spatial audio</p>
-                        <br> <span class="promo-badge">-17%</span>
-                    </div>
-                </div>
+        <!-- SIMILAR PROMOTIONS -->
+        <section class="similar-promotions">
+          <h2>Similar Promotions</h2>
 
-                <!-- Product 3 -->
-                <div class="promo-card">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=250&fit=crop" alt="Nike Shoes">
-                    <div class="promo-content">
-                        <h4>Nike Air Zoom Pegasus</h4>
-                        <br> <div class="promo-price">
-                            <span class="current">£119</span>
-                            <span class="old">£149</span>
-                        </div>
-                        <p class="promo-desc">Premium running shoes</p>
-                        <br> <span class="promo-badge">-20%</span>
-                    </div>
-                </div>
+          <div class="promo-grid">
+            <div class="promo-card">
+              <img src="IMG/Apple Watch Series 9.jpg" alt="Apple Watch" />
+              <h4>Apple Watch Series 9</h4>
+              <span>£299 <del>£349</del></span>
             </div>
+
+            <div class="promo-card">
+              <img
+                src="https://images.unsplash.com/photo-1591370874773-6702e8f12fd8"
+                alt="AirPods Pro"
+              />
+              <h4>AirPods Pro</h4>
+              <span>£249 <del>£299</del></span>
+            </div>
+
+            <div class="promo-card">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                alt="Nike Shoes"
+              />
+              <h4>Nike Air Zoom Pegasus</h4>
+              <span>£119 <del>£149</del></span>
+            </div>
+          </div>
         </section>
-    </main>
+      </main>
 
-    <!-- NOTIFICATION POPUP -->
-    <br> <div id="notification" class="notification"></div>
+      <!-- NOTIFICATION -->
+      <div id="notification" class="notification"></div>
 
-        <div class="footer">
+      <div class="footer">
         <div class="f_logo"><img src="IMG/Logo.png" alt="Logo of Xtra" /></div>
         <div class="about">
           <div class="title">About Xtra Promo Hub</div>
@@ -309,8 +255,9 @@
           </a>
         </div>
       </div>
-      <div class="copyright"></div>
+      <div class="copyright">© 2026 Xtra Promo Hub. All rights reserved.</div>
     </div>
+
     <script src="script.js"></script>
     <script src="disDetail.js"></script>
   </body>

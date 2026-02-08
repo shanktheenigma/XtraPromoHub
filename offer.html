@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="offer.css">
+    <link rel="shortcut icon" href="IMG/Favicon.png" type="image/x-icon" />
+    <title>Offer - Xtra</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="h_logo">
+        <a href="index.html">
+          <img src="IMG/Head_Logo.png" alt="Logo of Xtra"
+        /></a>
+      </div>
+      <div class="search">
+        <input type="search" placeholder="Search ... " />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <!-- Share Button -->
+      <div class="free_offer">
+        <i class="fa-solid fa-gift"></i>Claim free standard offer!
+      </div>
+
+      <div class="account"><a href="account.html">Log in</a></div>
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="index.html"><button>Home</button></a>
+        </li>
+        <li>
+          <a href="discounts.html"><button>Discounts</button></a>
+        </li>
+        <li>
+          <a href="offer.html"><button class="active">Offer</button></a>
+        </li>
+        <li>
+          <a href="aboutUs.html"><button>About Us</button></a>
+        </li>
+        <li>
+          <a href="bookmark.html"><button>Bookmarks</button></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container" id="offerPageId">
+      <button id="backToTop" aria-label="Back to top">To top</button>
+
+      <div class="offerContent">
+        <h1 class="welcomeTitle">Welcome to hPanel, M!</h1>
+
+        <div class="promoBanner">
+          <div class="bannerText">
+            <h2 class="bannerTitle">
+              It's the giant Hostinger sale – make your next move!
+            </h2>
+            <p class="bannerDesc">
+              Grab these great deals that we've handpicked just for you.
+            </p>
+          </div>
+          <div class="bannerIcon">
+            <i class="fa-solid fa-percent"></i>
+          </div>
+        </div>
+
+        <div class="cardsContainer">
+          <!-- Card 1 -->
+          <div class="pricingCard">
+            <h3 class="cardTitle">Get a new hosting plan</h3>
+            <p class="cardDesc">
+              Everything you need to create a site and get online
+            </p>
+
+            <div class="priceInfo">
+              <span class="originalPrice">$9.99</span>
+              <span class="discountBadge">80% OFF</span>
+            </div>
+            <div class="currentPriceBlock">
+              <span class="fromText">From</span>
+              <span class="priceAmount">$1.99/mo</span>
+            </div>
+            <p class="subscriptionNote">when getting a 4-year subscription</p>
+
+            <button class="getDealButton">Get deal</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="pricingCard">
+            <h3 class="cardTitle">Get Hostinger Horizons</h3>
+            <p class="cardDesc">
+              Build and launch a site in minutes by chatting with AI.
+            </p>
+
+            <div class="priceInfo">
+              <span class="originalPrice">$9.99</span>
+              <span class="discountBadge purpleBadge">UP TO 2 MO. FREE</span>
+            </div>
+            <div class="currentPriceBlock">
+              <span class="fromText">From</span>
+              <span class="priceAmount">$6.99/mo</span>
+            </div>
+            <p class="subscriptionNote">when getting a 1-year subscription</p>
+
+            <button class="getDealButton">Get deal</button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="pricingCard">
+            <h3 class="cardTitle">Get a new VPS</h3>
+            <p class="cardDesc">
+              Get an AI-managed VPS. Secure, speedy, and reliable.
+            </p>
+
+            <div class="priceInfo">
+              <span class="originalPrice">$13.99</span>
+              <span class="discountBadge">64% OFF</span>
+            </div>
+            <div class="currentPriceBlock">
+              <span class="fromText">From</span>
+              <span class="priceAmount">$4.99/mo</span>
+            </div>
+            <p class="subscriptionNote">when getting a 1-year subscription</p>
+
+            <button class="getDealButton">Get deal</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="f_logo"><img src="IMG/Logo.png" alt="Logo of Xtra" /></div>
+        <div class="about">
+          <div class="title">About Xtra Promo Hub</div>
+          <ul>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="rules">
+          <div class="title">Rules</div>
+          <ul>
+            <li><a href="termsAndConditions.html">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="socialLink">
+          <div class="title">Community</div>
+          <a href="#">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
