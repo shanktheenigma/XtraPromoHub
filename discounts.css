@@ -80,3 +80,40 @@
   border-right: 1px solid #740000;
   transition: transform 0.2s;
 }
+
+@media (max-width: 768px) {
+  .category {
+    padding: 15px;
+  }
+  .catTitle {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .categories {
+    gap: 5px;
+    grid-auto-columns: 130px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .category {
+    padding: 10px;
+  }
+  .catTitle {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .categories {
+    gap: 5px;
+    grid-auto-columns: 100px;
+    height: 50px;
+  }
+  .categories button {
+    height: 30px;
+    font-size: 10px;
+  }
+  .disCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -161,3 +161,57 @@ select {
   color: #3f0102;
   text-decoration: underline;
 }
+
+@media (max-width: 1024px) {
+  .contactForm {
+    padding: 20px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactForm {
+    padding: 0px;
+    width: 250px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    border-radius: 4px;
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+  .infoBlock h3 {
+    font-size: 12px;
+  }
+  .infoBlock p {
+    font-size: 10px;
+  }
+  .linklist a,
+  .linklist {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactHeader h1 {
+    font-size: 26px;
+  }
+  .contactHeader P {
+    font-size: 15px;
+  }
+  .contentWrapper {
+    padding-top: 20px;
+  }
+  .contactGrid {
+    display: block;
+  }
+  .contactForm {
+    width: 100%;
+  }
+  .contactForm {
+    margin-bottom: 20px;
+  }
+}

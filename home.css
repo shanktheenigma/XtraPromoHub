@@ -61,7 +61,7 @@
 .sustainability {
   background: #ffffff;
   border: 1px solid #854f4f;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 40px 30px;
   margin: 40px 0;
 }
@@ -90,7 +90,7 @@
 
 .susCard {
   background: #ffecec;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 25px 20px;
   text-align: center;
   transition: 0.3s;
@@ -115,4 +115,63 @@
 .susCard:hover {
   background: #ffd4d4;
   transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .disCards {
+    grid-auto-columns: 220px;
+  }
+}
+@media (max-width: 600px) {
+  .slider {
+    height: 250px;
+  }
+  .slides img {
+    height: 250px;
+  }
+
+  .back,
+  .next {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  .back {
+    top: 35%;
+  }
+  .next {
+    top: 50%;
+  }
+  .disCards {
+    grid-auto-columns: 180px;
+  }
+  .sustainability {
+    padding: 20px 10px;
+  }
+  .susHead {
+    margin-bottom: 20px;
+  }
+  .susTitle {
+    font-size: 20px;
+  }
+  .susSub {
+    font-size: 10px;
+    margin-top: 0px;
+  }
+  .susGrid {
+    gap: 10px;
+  }
+  .susCard {
+    border-radius: 8px;
+    padding: 15px 5px;
+  }
+  .susCard i {
+    font-size: 20px;
+  }
+  .susCardTitle {
+    font-size: 9px;
+  }
+  .susCard p {
+    font-size: 8px;
+  }
 }

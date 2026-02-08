@@ -18,7 +18,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="T&C.css">
+    <link rel="stylesheet" href="T&C.css" />
     <link rel="shortcut icon" href="IMG/Favicon.png" type="image/x-icon" />
     <title>Terms and Conditions - Xtra</title>
   </head>
@@ -36,10 +36,13 @@
 
       <!-- Share Button -->
       <div class="free_offer">
-        <i class="fa-solid fa-gift"></i>Claim free standard offer!
+        <i class="fa-solid fa-gift"></i>Claim free <span>standard</span> offer!
       </div>
 
       <div class="account"><a href="account.html">Log in</a></div>
+      <div class="menuBtn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </div>
 
     <div class="nav">
@@ -64,14 +67,23 @@
 
     <div class="container" id="termsPageId">
       <button id="backToTop" aria-label="Back to top">To top</button>
+      <div class="navOverlay" id="navOverlay"></div>
 
       <div class="termsContent">
         <div class="termsHeader">
-          <span class="safeBadge"><i class="fa-solid fa-shield-halved"></i> Safe savings, clear rules</span>
+          <span class="safeBadge"
+            ><i class="fa-solid fa-shield-halved"></i> Safe savings, clear
+            rules</span
+          >
           <h1 class="termsTitle">Terms & Conditions</h1>
-          <p class="termsDesc">The legal basics that keep PromoFinder fair, transparent, and safe for everyone looking for the best promotions.</p>
-          <p class="lastUpdated">Last updated: October 24, 2023 • Applies to all PromoFinder users</p>
-          
+          <p class="termsDesc">
+            The legal basics that keep PromoFinder fair, transparent, and safe
+            for everyone looking for the best promotions.
+          </p>
+          <p class="lastUpdated">
+            Last updated: October 24, 2023 • Applies to all PromoFinder users
+          </p>
+
           <div class="tagList">
             <span class="termTag">Promotion rules</span>
             <span class="termTag">Website usage</span>
@@ -86,27 +98,41 @@
               <h2 class="sectionTitle">Promotion Rules</h2>
               <span class="helpLink">How deals work on PromoFinder</span>
             </div>
-            <p class="sectionIntro">These rules explain how promotions listed on PromoFinder should be used and shared.</p>
+            <p class="sectionIntro">
+              These rules explain how promotions listed on PromoFinder should be
+              used and shared.
+            </p>
             <ol class="rulesList">
               <li>
-                <strong>Third-party offers only.</strong> PromoFinder does not sell products. Every promotion belongs to the original store or brand.
+                <strong>Third-party offers only.</strong> PromoFinder does not
+                sell products. Every promotion belongs to the original store or
+                brand.
               </li>
               <li>
-                <strong>No guarantee of validity.</strong> We try to show fresh, working deals, but codes can expire or change at any time.
+                <strong>No guarantee of validity.</strong> We try to show fresh,
+                working deals, but codes can expire or change at any time.
               </li>
               <li>
-                <strong>Check details before checkout.</strong> Always confirm price, shipping, and conditions on the store's checkout page.
+                <strong>Check details before checkout.</strong> Always confirm
+                price, shipping, and conditions on the store's checkout page.
               </li>
               <li>
-                <strong>Honest submissions only.</strong> When you share a promotion, you confirm it is real, safe to click, and not misleading.
+                <strong>Honest submissions only.</strong> When you share a
+                promotion, you confirm it is real, safe to click, and not
+                misleading.
               </li>
               <li>
-                <strong>Affiliate links.</strong> Some links may be affiliate links. If you buy, PromoFinder may earn a small commission at no extra cost to you.
+                <strong>Affiliate links.</strong> Some links may be affiliate
+                links. If you buy, PromoFinder may earn a small commission at no
+                extra cost to you.
               </li>
             </ol>
             <div class="reportBox">
               <i class="fa-solid fa-bug"></i>
-              <span>Spot an expired or fake promo? Report it directly on the deal page so we can keep the community clean.</span>
+              <span
+                >Spot an expired or fake promo? Report it directly on the deal
+                page so we can keep the community clean.</span
+              >
             </div>
           </div>
 
@@ -116,24 +142,38 @@
               <h2 class="sectionTitle">Rules of Website</h2>
               <span class="helpLink">How to use PromoFinder</span>
             </div>
-            <p class="sectionIntro">Basic rules that keep PromoFinder helpful and respectful for everyone.</p>
+            <p class="sectionIntro">
+              Basic rules that keep PromoFinder helpful and respectful for
+              everyone.
+            </p>
             <ul class="rulesList alphaList">
               <li>
-                <strong>Respectful behaviour.</strong> No hate speech, harassment, spam, or misleading content is allowed anywhere on the site.
+                <strong>Respectful behaviour.</strong> No hate speech,
+                harassment, spam, or misleading content is allowed anywhere on
+                the site.
               </li>
               <li>
-                <strong>Account safety.</strong> Keep your login details private. You're responsible for activity done through your account.
+                <strong>Account safety.</strong> Keep your login details
+                private. You're responsible for activity done through your
+                account.
               </li>
               <li>
-                <strong>No automated scraping.</strong> Bots or unauthorized tools that copy our data or overload our servers are not allowed.
+                <strong>No automated scraping.</strong> Bots or unauthorized
+                tools that copy our data or overload our servers are not
+                allowed.
               </li>
               <li>
-                <strong>Respect intellectual property.</strong> Do not upload content you don't have rights to, and don't copy PromoFinder's branding without permission.
+                <strong>Respect intellectual property.</strong> Do not upload
+                content you don't have rights to, and don't copy PromoFinder's
+                branding without permission.
               </li>
             </ul>
             <div class="warningBox">
               <i class="fa-solid fa-circle-exclamation"></i>
-              <span>Serious or repeated violations may lead to suspension or permanent removal of your PromoFinder account.</span>
+              <span
+                >Serious or repeated violations may lead to suspension or
+                permanent removal of your PromoFinder account.</span
+              >
             </div>
           </div>
         </div>
@@ -141,14 +181,16 @@
         <div class="termsFooter">
           <div class="contactInfo">
             <h3>Have a question about these rules?</h3>
-            <p>Our team can help you understand how promotions and website usage work.</p>
+            <p>
+              Our team can help you understand how promotions and website usage
+              work.
+            </p>
           </div>
           <div class="contactActions">
             <button class="contactBtn">Contact Support</button>
             <a href="#" class="legalLink">View full legal center</a>
           </div>
         </div>
-      </div>
 
       <div class="footer">
         <div class="f_logo"><img src="IMG/Logo.png" alt="Logo of Xtra" /></div>
@@ -162,7 +204,7 @@
         <div class="rules">
           <div class="title">Rules</div>
           <ul>
-            <li><a href="termsAndConditions.html">Terms and Conditions</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
           </ul>
         </div>
         <div class="socialLink">

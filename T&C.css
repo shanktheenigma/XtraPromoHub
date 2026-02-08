@@ -1,8 +1,10 @@
 .termsContent {
-  padding-bottom: 50px;
-  max-width: 1000px;
+  padding: 50px;
   margin: 0 auto;
+  border: 1px solid #740000;
+  border-radius: 8px;
   width: 100%;
+  background-color: white;
 }
 
 .termsHeader {
@@ -13,11 +15,11 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #00b67a;
+  color: #740000;
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 16px;
-  background-color: #eefbf6;
+  background-color: #74000032;
   padding: 6px 12px;
   border-radius: 8px;
 }
@@ -71,7 +73,7 @@
   background-color: #ffffff;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
 }
 
 .sectionHeader {
@@ -113,7 +115,7 @@
   color: #5e646e;
   font-size: 14px;
   line-height: 1.6;
-  list-style: decimal; 
+  list-style: decimal;
 }
 
 .rulesList.alphaList li {
@@ -125,19 +127,21 @@
   font-weight: 700;
 }
 
-.reportBox, .warningBox {
-  background-color: #eefbf6;
+.reportBox,
+.warningBox {
+  background-color: #74000032;
   padding: 20px;
   border-radius: 8px;
   display: flex;
   gap: 12px;
   font-size: 13px;
-  color: #007f5f;
+  color: #740000;
   align-items: flex-start;
   line-height: 1.5;
 }
 
-.reportBox i, .warningBox i {
+.reportBox i,
+.warningBox i {
   margin-top: 2px;
   font-size: 16px;
 }
@@ -171,8 +175,8 @@
 }
 
 .contactBtn {
-  background-color: #00b67a;
-  color: #ffffff;
+  background-color: #74000032;
+  color: #740000;
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
@@ -180,10 +184,13 @@
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s;
+  border: 2px solid white;
 }
 
 .contactBtn:hover {
-  background-color: #009e6a;
+  background-color: white;
+  border: 2px solid #854f4f;
+  transition: all 0.3s ease;
 }
 
 .legalLink {
@@ -195,4 +202,163 @@
 
 .legalLink:hover {
   text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .termsContent {
+    padding: 40px 30px;
+  }
+
+  .termsTitle {
+    font-size: 34px;
+  }
+
+  .rulesGrid {
+    gap: 30px;
+  }
+
+  .rulesSection {
+    padding: 25px;
+  }
+
+  .termsFooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactActions {
+    gap: 16px;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  /* Header */
+  .header {
+    flex-wrap: wrap;
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  .search {
+    width: 100%;
+    order: 3;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .free_offer {
+    display: none;
+  }
+
+  .account {
+    margin-left: auto;
+  }
+
+  /* Navigation */
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Terms Content */
+  .termsContent {
+    padding: 30px 20px;
+  }
+
+  .termsTitle {
+    font-size: 28px;
+  }
+
+  .termsDesc {
+    font-size: 16px;
+  }
+
+  .rulesGrid {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .rulesSection {
+    min-width: unset;
+    padding: 22px;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+  }
+
+  .rulesList li {
+    font-size: 14px;
+  }
+
+  /* Footer inside terms */
+  .termsFooter {
+    gap: 16px;
+  }
+
+  .contactActions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .contactBtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Main Footer */
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer ul {
+    padding: 0;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .termsTitle {
+    font-size: 24px;
+  }
+
+  .safeBadge {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .termTag {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .sectionTitle {
+    font-size: 18px;
+  }
+
+  .sectionIntro {
+    font-size: 14px;
+  }
+
+  .rulesList {
+    padding-left: 16px;
+  }
+
+  #backToTop {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
 }

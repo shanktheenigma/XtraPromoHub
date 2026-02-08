@@ -36,10 +36,13 @@
 
       <!-- Share Button -->
       <div class="free_offer">
-        <i class="fa-solid fa-gift"></i>Claim free standard offer!
+        <i class="fa-solid fa-gift"></i>Claim free <span>standard</span> offer!
       </div>
 
       <div class="account"><a href="account.html">Log in</a></div>
+      <div class="menuBtn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </div>
 
     <div class="nav">
@@ -64,6 +67,7 @@
 
     <div class="container">
       <button id="backToTop" aria-label="Back to top">To top</button>
+      <div class="navOverlay" id="navOverlay"></div>
 
       <!-- BREADCRUMB -->
 
@@ -71,7 +75,7 @@
       <main class="product-main">
         <div class="breadcrumb-nav">
           <a href="index.html">Home</a> &gt;
-          <a href="product.html">Products</a> &gt;
+          <a href="product.html">Discounts</a> &gt;
           <span class="current">Sony WH-1000XM5</span>
         </div>
         <div class="product-container">
@@ -153,34 +157,129 @@
               <i class="fas fa-check-circle"></i>
               In Stock • Free Delivery • 30-Day Returns
             </div>
+            <div class="deal-timer-small">
+              Deal ends in:
+
+              <div class="timer-display">
+                <div class="time-box">
+                  <span id="days">00</span>
+                  <small>Days</small>
+                </div>
+
+                <div class="time-box">
+                  <span id="hours">00</span>
+                  <small>Hours</small>
+                </div>
+
+                <div class="time-box">
+                  <span id="minutes">00</span>
+                  <small>Min</small>
+                </div>
+
+                <div class="time-box">
+                  <span id="seconds">00</span>
+                  <small>Sec</small>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- STORE INFO -->
         <div class="store-info-section">
           <div class="store-details-card">
-            <h3><i class="fas fa-store"></i> Store Information</h3>
+            <div class="textInfo">
+              <h4><i class="fas fa-store"></i> Avaliable Stores Information</h4>
+              <div class="storeInfo">
+                <p class="store-title">
+                  Sony Official Store (Verified Seller)
+                </p>
 
-            <p><strong>Sony Official Store</strong> (Verified Seller)</p>
-            <p><i class="fas fa-phone"></i> 020 7946 0958</p>
-            <p><i class="fas fa-envelope"></i> support@sony-store.co.uk</p>
-            <p>
-              <i class="fas fa-map-marker-alt"></i> 123 Oxford Street, London
-            </p>
-          </div>
+                <div class="store-dropdown">
+                  <p><i class="fas fa-phone"></i> 020 7946 0958</p>
+                  <p>
+                    <i class="fas fa-envelope"></i> support@sony-store.co.uk
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i> 123 Oxford Street,
+                    London
+                  </p>
+                </div>
+              </div>
+              <div class="storeInfo">
+                <p class="store-title">
+                  Sony Official Store (Verified Seller)
+                </p>
 
-          <div class="store-map-card">
-            <h4><i class="fas fa-map-marker-alt"></i> Store Location</h4>
+                <div class="store-dropdown">
+                  <p><i class="fas fa-phone"></i> 020 7946 0958</p>
+                  <p>
+                    <i class="fas fa-envelope"></i> support@sony-store.co.uk
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i> 123 Oxford Street,
+                    London
+                  </p>
+                </div>
+              </div>
+              <div class="storeInfo">
+                <p class="store-title">
+                  Sony Official Store (Verified Seller)
+                </p>
 
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d151316.0346520112!2d-0.5728249!3d51.5574033!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876122ab5b1afa5%3A0x3956ecbaaa8b83f8!2sSony%20Centre!5e1!3m2!1sen!2ssg!4v1770479230365!5m2!1sen!2ssg"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+                <div class="store-dropdown">
+                  <p><i class="fas fa-phone"></i> 020 7946 0958</p>
+                  <p>
+                    <i class="fas fa-envelope"></i> support@sony-store.co.uk
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i> 123 Oxford Street,
+                    London
+                  </p>
+                </div>
+              </div>
+              <div class="storeInfo">
+                <p class="store-title">
+                  Sony Official Store (Verified Seller)
+                </p>
+
+                <div class="store-dropdown">
+                  <p><i class="fas fa-phone"></i> 020 7946 0958</p>
+                  <p>
+                    <i class="fas fa-envelope"></i> support@sony-store.co.uk
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i> 123 Oxford Street,
+                    London
+                  </p>
+                </div>
+              </div>
+              <div class="storeInfo">
+                <p class="store-title">Sony Official Store (Verified Seller)</p>
+
+                <div class="store-dropdown">
+                  <p><i class="fas fa-phone"></i> 020 7946 0958</p>
+                  <p>
+                    <i class="fas fa-envelope"></i> support@sony-store.co.uk
+                  </p>
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i> 123 Oxford Street,
+                    London
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mapInfo">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d151316.0346520112!2d-0.5728249!3d51.5574033!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876122ab5b1afa5%3A0x3956ecbaaa8b83f8!2sSony%20Centre!5e1!3m2!1sen!2ssg!4v1770479230365!5m2!1sen!2ssg"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
 
@@ -225,7 +324,7 @@
           <div class="title">About Xtra Promo Hub</div>
           <ul>
             <li><a href="aboutUs.html">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <!-- <li></li> -->
             <!-- <li></li> -->
           </ul>
@@ -233,7 +332,7 @@
         <div class="rules">
           <div class="title">Rules</div>
           <ul>
-            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="T&C.html">Terms and Conditions</a></li>
             <!-- <li></li> -->
             <!-- <li></li> -->
             <!-- <li></li> -->
