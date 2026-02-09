@@ -6,6 +6,7 @@
     DM Sans,
     sans-serif;
   scrollbar-width: thin;
+  color: black;
 }
 
 a {
@@ -57,10 +58,9 @@ ul li {
 }
 
 .search input:hover {
-border: 2px solid rgba(0, 0, 0, 0.518);
-transition: all ease-in 0.3s;
+  border: 2px solid rgba(0, 0, 0, 0.518);
+  transition: all ease-in 0.3s;
 }
-
 
 .free_offer {
   width: 230px;
@@ -317,7 +317,7 @@ transition: all ease-in 0.3s;
 .footer {
   border: 1px solid #3f0102;
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
   gap: 40px;
   border-radius: 8px;
   margin-top: 30px;
@@ -601,6 +601,7 @@ transition: all ease-in 0.3s;
     display: none;
   }
   .footer .title {
+    width: 80px;
     font-size: 10px;
     margin-bottom: 2px;
     padding: 0px 0px;
@@ -608,7 +609,7 @@ transition: all ease-in 0.3s;
 
   .footer ul li {
     padding: 0px 0px;
-    width: 140px;
+    width: 80px;
     height: 15px;
     margin-bottom: 2px;
   }
@@ -628,8 +629,9 @@ transition: all ease-in 0.3s;
     color: #3f0102;
     cursor: pointer;
   }
+
   .copyright {
-    top: -20px;
+    top: -15px;
     left: 10px;
     text-align: left;
     font-size: 8px;
